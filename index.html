@@ -5,6 +5,14 @@
 	<link rel="stylesheet" type="text/css" href="./style/style.css">
 </head>
 <body>
+<header id="nav">
+	<ul>
+		<li><a href="#about">About the Movie</a></li>
+		<li><a href="#caste">Full Caste</a></li>
+		<li><a href="#trailer">Trailer</a></li>
+	</ul>
+</header>
+<div id="top"><a href="#nav">Move to top</a></div>
 <h1 style="color:white; font-size: 50px"><center>Avengers: Infinity Wars</center></h1>
 <!-- <div class="img"><center><img src="./assets/images/pic1.png"></center></div> -->
 <div class="spoiler hide">
@@ -28,17 +36,13 @@
 
 </div>
 
-<div class="container">
+<div class="container" id="about">
 	<h2>About The Movie/ Movie Summary</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p>As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.</p>
 </div>
-<div class=" container caste">
+<div class="container caste" id="caste">
 	<h3>Full Caste </h3>
+	<input type="text" name="caste" id="searchCaste" placeholder="Search for your favourite Character">
 	<table>
 		<tr>
 			<td>
@@ -165,7 +169,7 @@
 		
 	
 </div>
-<div class="container">
+<div class="container" id="trailer">
 <iframe width="100%" height="500px" src="https://www.youtube.com/embed/6ZfuNTqbHE8">
 </iframe>
 

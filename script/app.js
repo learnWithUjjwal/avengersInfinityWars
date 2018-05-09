@@ -41,3 +41,18 @@ $overlay.click(function(){
 })
 	
 //Overlay contains an image & a caption
+$(document).scroll(function(){
+	$('#top').show();
+	if($(document).scrollTop() === 0){
+		$('#top').hide();
+	}
+});
+
+$('#searchCaste').on('keyup', function(){
+	var value = $(this).val().toLowerCase();
+	console.log(value);
+	$(".caste tr").filter(function(){
+		$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+	})
+
+})
